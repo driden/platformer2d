@@ -38,3 +38,53 @@ C# parse time         : 412ms
 candidates check time : 123ms
 console write time    : 2ms
 
+[api-updater (non-obsolete-error-filter)] 4/22/2022 1:41:11 AM : Starting /Users/fiorellafarinasso/2020.3.32f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 137.629ms
+moved types parse time: 136ms
+candidates parse time : 5ms
+C# parse time         : 421ms
+candidates check time : 80ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 4/22/2022 1:42:49 AM : Starting /Users/fiorellafarinasso/2020.3.32f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 100.748ms
+moved types parse time: 123ms
+candidates parse time : 5ms
+C# parse time         : 355ms
+candidates check time : 71ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/22/2022 1:45:13 AM : Starting /Users/fiorellafarinasso/2020.3.32f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 114.9ms
+moved types parse time: 126ms
+candidates parse time : 8ms
+C# parse time         : 407ms
+candidates check time : 138ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/22/2022 1:45:55 AM : Starting /Users/fiorellafarinasso/2020.3.32f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 150.011ms
+moved types parse time: 125ms
+candidates parse time : 6ms
+C# parse time         : 406ms
+candidates check time : 77ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 4/22/2022 2:16:36 AM : Starting /Users/fiorellafarinasso/2020.3.32f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 149.363ms
+moved types parse time: 128ms
+candidates parse time : 5ms
+C# parse time         : 416ms
+candidates check time : 79ms
+console write time    : 1ms
+

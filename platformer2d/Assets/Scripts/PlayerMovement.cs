@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private float xPosition;
     private string JUMP = "Jump";
     private float JUMP_FORCE_Y = 15f;
-    private float X_SPEED = 6f;
+    private float X_SPEED = 7f;
     
 
     private void Start()

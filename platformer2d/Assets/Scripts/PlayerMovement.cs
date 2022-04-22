@@ -9,9 +9,8 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
     private float xPosition;
     private string JUMP = "Jump";
-    private string X = "Horizontal";
-    [SerializeField] private float JUMP_FORCE_Y = 15f;
-    [SerializeField] private float X_SPEED = 6f;
+    private float JUMP_FORCE_Y = 15f;
+    private float X_SPEED = 6f;
     
 
     private void Start()
@@ -23,12 +22,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        xPosition = Input.GetAxisRaw(X);
+        xPosition = Input.GetAxisRaw("Horizontal");
         rigidbody.velocity = new Vector2(xPosition * X_SPEED, rigidbody.velocity.y); //en y tiene que conservar la velocidad        
 
         if (Input.GetButtonDown(JUMP))
         {
-            rigidbody.velocity = new Vector3(0, JUMP_FORCE, 0);
+            rigidbody.velocity = new Vector3(0, JUMP_FORCE_Y, 0);
         }
 
         HandleAnimation();

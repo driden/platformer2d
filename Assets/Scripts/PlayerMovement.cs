@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private PlayerState state;
-    private SpriteRenderer spriteRenderer;
     private BoxCollider2D collider_;
     private ItemCollector ItemCollector;
     private bool IsFacingRight;
@@ -36,9 +35,9 @@ public class PlayerMovement : MonoBehaviour
     {
         this.rb = GetComponent<Rigidbody2D>();
         this.animator = GetComponent<Animator>();
-        this.spriteRenderer = GetComponent<SpriteRenderer>();
         this.state = PlayerState.Idle;
         this.collider_ = GetComponent<BoxCollider2D>();
+        this.IsFacingRight = true;
     }
 
     void Update()
@@ -65,14 +64,12 @@ public class PlayerMovement : MonoBehaviour
         if (xVelocity > 0f)
         {
             this.state = PlayerState.Running;
-            this.spriteRenderer.flipX = false;
             if (!IsFacingRight) Flip();
         }
         else if (xVelocity < 0f)
         {
             this.state = PlayerState.Running;
             if (IsFacingRight) Flip();
-            this.spriteRenderer.flipX = true;
         }
         else
         {
@@ -121,6 +118,9 @@ public class PlayerMovement : MonoBehaviour
          );
     }
 
+    public void StopAtLadderTop(){
+        this.rb.velocity = new Vector2(rb.velocity.x, 0f);
+    }
     private void Flip()
     {
         IsFacingRight = !IsFacingRight;

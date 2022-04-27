@@ -44,7 +44,6 @@ public class Enemy : MonoBehaviour
         var currX = this.rb.position.x;
 
         var dX = this.rb.position.x - this.StartingPosition.x;
-        Debug.Log($"[{startX}][{currX}][{dX}]");
         return Math.Abs(dX) < MaxWalkingDistance;
     }
 
@@ -66,7 +65,6 @@ public class Enemy : MonoBehaviour
     void Flip()
     {
         IsFacingRight = !IsFacingRight;
-        Debug.Log(IsFacingRight ? "Right" : "Left");
         transform.Rotate(0f, 180f, 0f);
     }
 }

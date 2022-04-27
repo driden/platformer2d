@@ -8,6 +8,7 @@ TagManager:
   - Ladder
   - LadderTop
   - Pumpkins
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Enemy
   - 
   - 
   - 

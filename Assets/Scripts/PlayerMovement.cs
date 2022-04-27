@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public enum PlayerState
@@ -88,9 +89,18 @@ public class PlayerMovement : MonoBehaviour
         this.animator.SetInteger(STATE_PARAM_NAME, (int)this.state);
     }
 
+    private void OnCollisionEnter2D(Collision2D collider)
+    {
+        if (collider.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Choque al enemigo papu");
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Ladder")
+        Debug.Log("Trigger ando");
+        if (collider.gameObject.CompareTag("Ladder"))
         {
             this.rb.gravityScale = 0f;
             this.canClimb = true;
@@ -99,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Ladder")
+        if (collider.gameObject.CompareTag("Ladder"))
         {
             this.rb.gravityScale = 1f;
             this.canClimb = false;

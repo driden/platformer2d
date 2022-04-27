@@ -6,7 +6,6 @@ public class Fireball : MonoBehaviour
 {
     public float Speed = 20f;
     public Rigidbody2D rb;
-
     public int Damage = 20;
 
     void Start()
@@ -21,6 +20,5 @@ public class Fireball : MonoBehaviour
         {
             enemy.TakeDamage(Damage);
         }
-        Debug.Log(collider.name);
     }
 }

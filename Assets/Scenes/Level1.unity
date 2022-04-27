@@ -37084,6 +37084,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853495586}
     m_Modifications:
+    - target: {fileID: -8278823072718539313, guid: 794c5361b0a234ed2832988c6106b6fb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4512924921057702192, guid: 794c5361b0a234ed2832988c6106b6fb, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -37143,6 +37147,10 @@ PrefabInstance:
     - target: {fileID: 6813446315779415267, guid: 794c5361b0a234ed2832988c6106b6fb, type: 3}
       propertyPath: m_LocalPosition.y
       value: -11.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 7088126865611744995, guid: 794c5361b0a234ed2832988c6106b6fb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8164500587618948220, guid: 794c5361b0a234ed2832988c6106b6fb, type: 3}
       propertyPath: m_Name
@@ -37360,6 +37368,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &363042509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 869109080278077234, guid: 794c5361b0a234ed2832988c6106b6fb, type: 3}
+  m_PrefabInstance: {fileID: 137644914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &363042510
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363042509}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.84375, y: 0.84375}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.84375, y: 0.84375}
+  m_EdgeRadius: 0
 --- !u!1 &388611919
 GameObject:
   m_ObjectHideFlags: 0
@@ -37504,7 +37543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6137486, y: 0.81379986, z: -10}
+  m_LocalPosition: {x: -1.4378934, y: 0.81379986, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -37642,6 +37681,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853495586}
     m_Modifications:
+    - target: {fileID: 77286668375899284, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
+      propertyPath: m_TagString
+      value: Damage
+      objectReference: {fileID: 0}
     - target: {fileID: 77286668708202860, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -37689,6 +37732,10 @@ PrefabInstance:
     - target: {fileID: 77286668708202861, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
       propertyPath: m_Name
       value: Spikes (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 245375940777242050, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
@@ -50973,7 +51020,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810898059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6137486, y: 0.81379986, z: -10}
+  m_LocalPosition: {x: -1.4378934, y: 0.81379986, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1619473334}
@@ -51184,6 +51231,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.46116734, y: 0.57546484}
+  m_EdgeRadius: 0
+--- !u!1 &913987664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6586643351941960064, guid: 794c5361b0a234ed2832988c6106b6fb, type: 3}
+  m_PrefabInstance: {fileID: 137644914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &913987665
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913987664}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.84375, y: 0.84375}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.84375, y: 0.84375}
   m_EdgeRadius: 0
 --- !u!1 &924898617
 GameObject:
@@ -51749,6 +51827,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853495586}
     m_Modifications:
+    - target: {fileID: 77286668375899284, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
+      propertyPath: m_TagString
+      value: Damage
+      objectReference: {fileID: 0}
     - target: {fileID: 77286668708202860, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -51796,6 +51878,10 @@ PrefabInstance:
     - target: {fileID: 77286668708202861, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
       propertyPath: m_Name
       value: Spikes (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 245375940777242050, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -52782,6 +52868,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853495586}
     m_Modifications:
+    - target: {fileID: 77286668375899284, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
+      propertyPath: m_TagString
+      value: Damage
+      objectReference: {fileID: 0}
     - target: {fileID: 77286668708202860, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -52829,6 +52919,10 @@ PrefabInstance:
     - target: {fileID: 77286668708202861, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
       propertyPath: m_Name
       value: Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 245375940777242050, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 964172e9d86fa44a1bf9a668d85b8497, type: 3}
@@ -52900,6 +52994,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853495586}
     m_Modifications:
+    - target: {fileID: 3009856732571886624, guid: b011c5deef7e24304a74253bc0e5e126, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6742517689414778374, guid: b011c5deef7e24304a74253bc0e5e126, type: 3}
       propertyPath: m_RootOrder
       value: 0

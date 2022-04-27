@@ -44,8 +44,7 @@ public class Enemy : MonoBehaviour
         var startX = this.StartingPosition.x;
         var currX = this.rb.position.x;
 
-        var dX = this.rb.position.x - this.StartingPosition.x;
-        Debug.Log($"[{startX}][{currX}][{dX}]");
+        var dX = rb.position.x - this.StartingPosition.x;
         return Math.Abs(dX) < MaxWalkingDistance;
     }
 

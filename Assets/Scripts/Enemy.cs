@@ -3,17 +3,19 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    private Rigidbody2D rb;
+    
     public int Health = 100;
 
     public float MaxWalkingDistance = 3f;
     public float MovementSpeed = 2f;
-    public Rigidbody2D rb;
     private Vector2 StartingPosition;
 
     private bool IsFacingRight = true;
 
     void Start()
     {
+        this.rb = GetComponent<Rigidbody2D>();
         StartingPosition = this.rb.position;
     }
 

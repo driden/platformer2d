@@ -7,14 +7,15 @@ TagManager:
   - FireCapsule
   - Ladder
   - LadderTop
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - Ground
+  - 
   - 
   - 
   - 
@@ -41,12 +42,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 2715688595
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Terrain
+  - name: Background
+    uniqueID: 2715688595
+    locked: 0
+  - name: Ground
     uniqueID: 547330371
     locked: 0

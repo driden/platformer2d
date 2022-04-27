@@ -11,6 +11,7 @@ public class Fireball : MonoBehaviour
 
     void Start()
     {
+        this.rb = GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * Speed;
     }
 

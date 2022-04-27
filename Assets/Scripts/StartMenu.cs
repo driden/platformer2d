@@ -2,12 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class StartMenu : MonoBehaviour
 {
-    public void StartGame()
+    [SerializeField]
+    public Button startGameButton;
+
+    public void Start()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        if (startGameButton)
+        {
+            startGameButton.onClick.AddListener(HandleStartGameButton);
+        }
+    }
+    
+    public void HandleStartGameButton()
+    {
+        SceneManager.LoadScene("Scenes/Level1");
     }
 }

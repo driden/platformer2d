@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum PlayerState
 {
@@ -156,6 +158,12 @@ public class PlayerMovement : MonoBehaviour
         this.state = PlayerState.Dead;
         animator.SetInteger(STATE_PARAM_NAME, (int) this.state);
         
-        //TODO Call end screen
+        StartCoroutine(WaitForSceneLoad());
+    }
+    
+    private IEnumerator WaitForSceneLoad()
+    {
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene("Scenes/EndGame");
     }
 }

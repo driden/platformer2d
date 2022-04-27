@@ -1,13 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameCompletedMenu : MonoBehaviour
 {
-    public void Quit()
+    [SerializeField]
+    public Button quitButton;
+
+    public void Start()
     {
-        Application.Quit();
+        if (quitButton) quitButton.onClick.AddListener(HandleQuitButton);
     }
 
-   
+    private void HandleQuitButton()
+    {
+        // Debug.Log("Test");
+        Application.Quit();
+    }
 }

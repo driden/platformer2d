@@ -12,12 +12,12 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private TextMeshProUGUI itemCounterText;
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "FireCapsule")
+        if (collider.gameObject.CompareTag("FireCapsule"))
         {
             OnUnlockFire.Invoke();
             Destroy(collider.gameObject);
         }
-        if (collider.gameObject.tag == "Pumpkins")
+        if (collider.gameObject.CompareTag("Pumpkins"))
         {
             Destroy(collider.gameObject);
             pumpkins++;

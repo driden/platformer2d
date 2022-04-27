@@ -9,6 +9,8 @@ TagManager:
   - LadderTop
   - Pumpkins
   - Enemy
+  - Background
+  - Damage
   layers:
   - Default
   - TransparentFX

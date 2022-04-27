@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D collider_;
     private ItemCollector ItemCollector;
     private bool IsFacingRight;
+    private bool isAlive = true;
 
 
     [SerializeField]
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (!isAlive) return;
         // TODO: Move the movement commands to FixedUpdate()
         this.xVelocity = Input.GetAxisRaw("Horizontal");
         this.rb.velocity = new Vector2(HorizontalSpeed * this.xVelocity, rb.velocity.y);
@@ -90,16 +92,22 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Ladder")
+        Debug.Log("Collission trigger");
+        if (collider.gameObject.CompareTag("Ladder"))
         {
             this.rb.gravityScale = 0f;
             this.canClimb = true;
+        }
+        if (collider.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Death");
+            this.isAlive = false;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Ladder")
+        if (collider.gameObject.CompareTag("Ladder"))
         {
             this.rb.gravityScale = 1f;
             this.canClimb = false;
@@ -108,9 +116,10 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
+        var bounds = collider_.bounds;
         return Physics2D.BoxCast(
-             collider_.bounds.center,
-             collider_.bounds.size,
+             bounds.center,
+             bounds.size,
              0f,
              Vector2.down,
              0.1f,

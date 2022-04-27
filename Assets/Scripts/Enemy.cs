@@ -7,13 +7,14 @@ public class Enemy : MonoBehaviour
 
     public float MaxWalkingDistance = 3f;
     public float MovementSpeed = 2f;
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     private Vector2 StartingPosition;
 
     private bool IsFacingRight = true;
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         StartingPosition = this.rb.position;
     }
 

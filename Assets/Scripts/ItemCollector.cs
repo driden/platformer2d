@@ -5,6 +5,9 @@ using UnityEngine.Events;
 
 public class ItemCollector : MonoBehaviour
 {
+
+    private int pumpkins = 0;
+
     public bool CollectedFire = false;
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -14,6 +17,14 @@ public class ItemCollector : MonoBehaviour
             this.CollectedFire = true;
             Destroy(collider.gameObject);
         }
+        if (collider.gameObject.tag == "Pumpkins")
+        {
+            Destroy(collider.gameObject);
+            pumpkins++;
+            Debug.Log("pumpkins: " + pumpkins);
+          //  fruitCounterText.text = ITEM_COUNT_TXT + fruits;
+        }  
+
     }
 
     public UnityEvent OnUnlockFire;

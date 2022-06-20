@@ -20,8 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private PlayerState state;
     private BoxCollider2D collider_;
-    private ItemCollector ItemCollector;
-    private bool IsFacingRight;
+    private ItemCollector itemCollector;
+    private bool isFacingRight;
     private bool isAlive = true;
 
 
@@ -41,14 +41,13 @@ public class PlayerMovement : MonoBehaviour
         this.animator = GetComponent<Animator>();
         this.state = PlayerState.Idle;
         this.collider_ = GetComponent<BoxCollider2D>();
-        this.IsFacingRight = true;
+        this.isFacingRight = true;
     }
 
     void Update()
     {
         if (!isAlive) return;
 
-            // TODO: Move the movement commands to FixedUpdate()
         this.xVelocity = Input.GetAxisRaw("Horizontal");
         this.rb.velocity = new Vector2(HorizontalSpeed * this.xVelocity, rb.velocity.y);
 
@@ -70,25 +69,21 @@ public class PlayerMovement : MonoBehaviour
         if (xVelocity > 0f)
         {
             this.state = PlayerState.Running;
-            if (!IsFacingRight) Flip();
+            if (!isFacingRight) Flip();
         }
         else if (xVelocity < 0f)
         {
             this.state = PlayerState.Running;
-            if (IsFacingRight) Flip();
+            if (isFacingRight) Flip();
         }
         else
         {
             this.state = PlayerState.Idle;
         }
 
-        if (rb.velocity.y > 0.1f)
+        if (this.yVelocity < -0.1f || this.yVelocity > 0.1f)
         {
             this.state = this.canClimb ? PlayerState.Climbing : PlayerState.Jumping;
-        }
-        else if (rb.velocity.y < -0.1f)
-        {
-            this.state = this.canClimb ? PlayerState.Climbing : PlayerState.Falling;
         }
 
         animator.SetInteger(STATE_PARAM_NAME, (int) this.state);
@@ -143,7 +138,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Flip()
     {
-        IsFacingRight = !IsFacingRight;
+        isFacingRight = !isFacingRight;
         transform.Rotate(0f, 180f, 0f);
     }
 

@@ -9,18 +9,37 @@ public class Spells : MonoBehaviour
 
     public bool CanShootFire = false;
 
+    public float maxCooldown = 2.1f;
+    public float cooldown = -1;
+    
+    
+
     // Update is called once per frame
     void FixedUpdate()
     {
         if (CanShootFire && Input.GetButton(FIRE_BUTTON))
         {
-            Shoot();
+            TryShoot();
         }
     }
+
+    void Update()
+    {
+	this.cooldown -= Time.deltaTime;
+    }
+
+
+    void TryShoot() 
+    {
+        if (this.cooldown <= 0) Shoot();	
+    }
+
 
     void Shoot()
     {
         Instantiate(fireballPrefab, FirePoint.position, FirePoint.rotation);
+	this.cooldown = this.maxCooldown;
+	
     }
 
     public void HandleUnlockFire() 

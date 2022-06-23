@@ -26,8 +26,8 @@ public class PlayerMovement : MonoBehaviour
 
 
     [SerializeField] private LayerMask jumpableGround;
-    private float xVelocity = 0f;
-    private float yVelocity = 0f;
+    [SerializeField] private float xVelocity = 0f;
+    [SerializeField] private float yVelocity = 0f;
     private bool canClimb;
 
     public float JumpForce = 7;
@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
             this.state = this.canClimb ? PlayerState.Climbing : PlayerState.Jumping;
         }
 
-        animator.SetInteger(STATE_PARAM_NAME, (int) this.state);
+        animator.SetInteger(STATE_PARAM_NAME, (int)this.state);
     }
 
     private void OnCollisionEnter2D(Collision2D collider)
@@ -142,17 +142,17 @@ public class PlayerMovement : MonoBehaviour
     private void Die()
     {
         isAlive = false;
-        
+
         state = PlayerState.Dead;
         xVelocity = 0f;
         yVelocity = 0f;
         rb.velocity = new Vector2(0, 0);
         this.state = PlayerState.Dead;
-        animator.SetInteger(STATE_PARAM_NAME, (int) this.state);
-        
+        animator.SetInteger(STATE_PARAM_NAME, (int)this.state);
+
         StartCoroutine(WaitForSceneLoad());
     }
-    
+
     private IEnumerator WaitForSceneLoad()
     {
         yield return new WaitForSeconds(2.5f);

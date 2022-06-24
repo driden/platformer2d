@@ -106,7 +106,6 @@ public class PlayerMovement : MonoBehaviour
         if (collider.gameObject.CompareTag("Ladder"))
         {
             this.rb.gravityScale = 0f;
-            Debug.Log("Can climb");
             this.canClimb = true;
         }
     }
@@ -116,7 +115,6 @@ public class PlayerMovement : MonoBehaviour
         if (collider.gameObject.CompareTag("Ladder"))
         {
             this.rb.gravityScale = 1f;
-            Debug.Log("Can't climb");
             this.canClimb = false;
         }
     }

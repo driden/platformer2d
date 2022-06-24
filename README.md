@@ -5,8 +5,9 @@
 ### Devoluciones
 - [ ] Buscar nombre
 - [x] Fix que el collider queda en cualquier lado cuando se hace un flip
-- [ ] Fix cantidad de disparos de la fireball
-- [ ] Fix animacion salto
+- [x] Fix cantidad de disparos de la fireball
+- [x] Borrar las fireballs despues de que se disparan
+- [x] Fix animacion salto
 - [ ] Fix escalera
 - [ ] Hacer el juego más difícil
 

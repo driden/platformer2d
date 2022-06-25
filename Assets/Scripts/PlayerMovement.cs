@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight;
     private bool isAlive = true;
 
+    public SFXManager sfx;
+
 
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float xVelocity = 0f;
@@ -54,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
         if (!canClimb && Input.GetButtonDown("Jump") && IsGrounded())
         {
             this.rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+            this.sfx.playJump();
         }
         else if (canClimb && Input.GetButtonDown("Vertical"))
         {
@@ -148,6 +151,7 @@ public class PlayerMovement : MonoBehaviour
         this.state = PlayerState.Dead;
         animator.SetInteger(STATE_PARAM_NAME, (int)this.state);
 
+        this.sfx.playLose();
         StartCoroutine(WaitForSceneLoad());
     }
 

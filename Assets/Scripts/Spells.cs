@@ -6,6 +6,7 @@ public class Spells : MonoBehaviour
     private const string FIRE_BUTTON = "Fire1";
     public Transform FirePoint;
     public GameObject fireballPrefab;
+    public SFXManager sfx;
 
     public bool CanShootFire = false;
 
@@ -38,13 +39,15 @@ public class Spells : MonoBehaviour
     void Shoot()
     {
         Instantiate(fireballPrefab, FirePoint.position, FirePoint.rotation);
-	this.cooldown = this.maxCooldown;
+        this.cooldown = this.maxCooldown;
+        this.sfx.playFireBall();
 	
     }
 
     public void HandleUnlockFire() 
     {
         this.CanShootFire = true;
+        sfx.playUnlock();
     }
 
 }

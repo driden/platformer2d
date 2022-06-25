@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     private Vector2 StartingPosition;
 
     private bool IsFacingRight = true;
+    public SFXManager sfx;
 
     void Start()
     {

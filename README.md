@@ -8,7 +8,7 @@
 - [x] Fix cantidad de disparos de la fireball
 - [x] Borrar las fireballs despues de que se disparan
 - [x] Fix animacion salto
-- [ ] Fix escalera
+- [x] Fix escalera
 - [ ] Hacer el juego más difícil
 
 ### Entrega 2
@@ -28,11 +28,11 @@
 - [ ] Victoria/Derrota
 
 #### Sonidos
-- [ ] Moverse
-- [ ] Saltar
-- [ ] Bola de fuego
-- [ ] Recibir daño
-- [ ] Sonidos de enemigos(moverse atacar, recibir daño)
+- [x] Moverse
+- [x] Saltar
+- [x] Bola de fuego
+- [x] Recibir daño
+- [x] Sonidos de enemigos(moverse atacar, recibir daño)
 
 #### Itch.io
 - [ ] Pagina con ejecutable funcionando

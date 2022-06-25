@@ -11,7 +11,6 @@ public class WinChest : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-        
             fx.playWin();
             StartCoroutine(WaitForSceneLoad());
         }

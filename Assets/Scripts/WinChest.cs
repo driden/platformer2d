@@ -10,7 +10,7 @@ public class WinChest : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Scenes/EndGame");
+            SceneManager.LoadScene("Scenes/Level2");
         }
     }
 }

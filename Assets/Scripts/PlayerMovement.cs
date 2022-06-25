@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private ItemCollector itemCollector;
     private bool isFacingRight;
     private bool isAlive = true;
+    private bool onPlatform = false;
 
 
     [SerializeField] private LayerMask jumpableGround;
@@ -30,9 +31,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float yVelocity = 0f;
     private bool canClimb;
 
-    public float JumpForce = 7;
+    public float JumpForce = 9;
     public float HorizontalSpeed = 4;
-    public float ClimbSpeed = 2;
+    public float ClimbSpeed = 5;
 
 
     void Start()
@@ -51,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         this.xVelocity = Input.GetAxisRaw("Horizontal");
         this.rb.velocity = new Vector2(HorizontalSpeed * this.xVelocity, rb.velocity.y);
 
-        if (!canClimb && Input.GetButtonDown("Jump") && IsGrounded())
+        if (!canClimb && Input.GetButtonDown("Jump") && (IsGrounded() || onPlatform))
         {
             this.rb.velocity = new Vector2(rb.velocity.x, JumpForce);
         }
@@ -108,6 +109,10 @@ public class PlayerMovement : MonoBehaviour
             this.rb.gravityScale = 0f;
             this.canClimb = true;
         }
+        if (collider.gameObject.CompareTag("Jumpable"))
+        {
+            onPlatform = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -116,6 +121,10 @@ public class PlayerMovement : MonoBehaviour
         {
             this.rb.gravityScale = 1f;
             this.canClimb = false;
+        }
+        if (collider.gameObject.CompareTag("Jumpable"))
+        {
+            onPlatform = false;
         }
     }
 

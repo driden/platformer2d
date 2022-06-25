@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - Background
   - Damage
+  - Jumpable
   layers:
   - Default
   - TransparentFX

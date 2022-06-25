@@ -10,7 +10,7 @@ public class Spells : MonoBehaviour
 
     public bool CanShootFire = false;
 
-    public float maxCooldown = 2.1f;
+    public float maxCooldown = 1.5f;
     public float cooldown = -1;
     
     

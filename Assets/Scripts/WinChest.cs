@@ -13,7 +13,12 @@ public class WinChest : MonoBehaviour
         {
         
             fx.playWin();
-            SceneManager.LoadScene("Scenes/EndGame");
+            StartCoroutine(WaitForSceneLoad());
         }
+    }
+    private IEnumerator WaitForSceneLoad()
+    {
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene("Scenes/EndGame");
     }
 }

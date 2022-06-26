@@ -1,5 +1,11 @@
 name: Build Project and Publish to itch.io
-on: [push]
+on: 
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - master
+    tags:        
+      - *.*
 jobs:
   build:
     name: Build Project and Publish to itch.io ✨

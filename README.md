@@ -12,7 +12,7 @@
 - [ ] Hacer el juego más difícil
 
 ### Entrega 2
-- [ ] Crear al menos un nivel más
+- [x] Crear al menos un nivel más
 #### HUD
 - [ ] UI Responsive en varias resoluciones
 - [ ] Menú del juego explicando controles
@@ -23,9 +23,9 @@
 - [ ] Agregar animaciones a los enemigos
 
 #### Música
-- [ ] En menú principal
-- [ ] Ambiente
-- [ ] Victoria/Derrota
+- [x] En menú principal
+- [x] Ambiente
+- [x] Victoria/Derrota
 
 #### Sonidos
 - [x] Moverse

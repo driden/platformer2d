@@ -126,6 +126,7 @@ MonoBehaviour:
   Health: 100
   MaxWalkingDistance: 2
   MovementSpeed: 5
+  sfx: {fileID: 0}
 --- !u!50 &6678062473629625110
 Rigidbody2D:
   serializedVersion: 4

@@ -9,6 +9,8 @@ public class ItemCollector : MonoBehaviour
 {
 
     private int pumpkins = 0;
+    public SFXManager sfx;
+
     [SerializeField] private TextMeshProUGUI itemCounterText;
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -22,6 +24,7 @@ public class ItemCollector : MonoBehaviour
             Destroy(collider.gameObject);
             pumpkins++;
             itemCounterText.text = "Points: " + pumpkins;
+            sfx.playPickUp();
         }  
 
     }

@@ -16,7 +16,6 @@ public class GameCompletedMenu : MonoBehaviour
 
     private void HandleQuitButton()
     {
-        // Debug.Log("Test");
         Application.Quit();
     }
 }

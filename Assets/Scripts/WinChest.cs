@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class WinChest : MonoBehaviour
 {
+    public SFXManager fx;
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Scenes/Level2");
+            fx.playWin();
+            StartCoroutine(WaitForSceneLoad());
         }
+    }
+    private IEnumerator WaitForSceneLoad()
+    {
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene("Scenes/Level2");
     }
 }

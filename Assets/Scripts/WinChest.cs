@@ -18,6 +18,6 @@ public class WinChest : MonoBehaviour
     private IEnumerator WaitForSceneLoad()
     {
         yield return new WaitForSeconds(2.5f);
-        SceneManager.LoadScene("Scenes/EndGame");
+        SceneManager.LoadScene("Scenes/Level2");
     }
 }

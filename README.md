@@ -49,7 +49,7 @@
 - [x] Sonidos de enemigos(moverse atacar, recibir daño)
 
 #### Itch.io
-- [ ] Página con ejecutable funcionando
+- [x] Página con ejecutable funcionando
 - [ ] información del juego (capturas y/o videos)
 - [ ] Créditos a los autores y a los assets de terceros.
 

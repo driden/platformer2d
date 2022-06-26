@@ -55,3 +55,10 @@
 
 ### Mantenimiento
 - [ ] Borrar assets que no se están usando (sobre todo sonidos)
+
+
+# Creditos
+- Fireball sprite fue sacada de google 
+- Bg music: https://assetstore.unity.com/publishers/27795
+- Tiles & general sprites: https://assetstore.unity.com/publishers/40001
+- Warrior sprite and animations: https://assetstore.unity.com/publishers/50715

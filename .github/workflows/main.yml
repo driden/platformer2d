@@ -5,7 +5,7 @@ on:
     branches:    
       - master
     tags:        
-      - *.*
+      - *
 jobs:
   build:
     name: Build Project and Publish to itch.io ✨

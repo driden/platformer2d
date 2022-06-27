@@ -13,8 +13,6 @@ public class Spells : MonoBehaviour
     public float maxCooldown = 1.5f;
     public float cooldown = -1;
     
-    
-
     // Update is called once per frame
     void FixedUpdate()
     {

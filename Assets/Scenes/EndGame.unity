@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 177562370}
   - component: {fileID: 177562369}
   - component: {fileID: 177562368}
-  - component: {fileID: 177562367}
   m_Layer: 5
   m_Name: Button - tryagain
   m_TagString: Untagged
@@ -163,19 +162,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2, y: -79}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &177562367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177562365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8e470f0956040aab386f79bd59120f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startGameButton: {fileID: 0}
 --- !u!114 &177562368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,7 +766,6 @@ GameObject:
   - component: {fileID: 772137782}
   - component: {fileID: 772137781}
   - component: {fileID: 772137780}
-  - component: {fileID: 772137779}
   m_Layer: 5
   m_Name: Button quit
   m_TagString: Untagged
@@ -808,19 +793,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2, y: -141}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &772137779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772137777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e461812ff1ad84068811b34453350017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quitButton: {fileID: 0}
 --- !u!114 &772137780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1159,6 +1131,7 @@ GameObject:
   - component: {fileID: 1606064752}
   - component: {fileID: 1606064754}
   - component: {fileID: 1606064753}
+  - component: {fileID: 1606064755}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1225,6 +1198,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606064751}
   m_CullTransparentMesh: 1
+--- !u!114 &1606064755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606064751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e461812ff1ad84068811b34453350017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quitButton: {fileID: 772137780}
+  tryAgainButton: {fileID: 177562368}
 --- !u!1 &1702826728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e461812ff1ad84068811b34453350017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quitButton: {fileID: 177562368}
+  quitButton: {fileID: 772137780}
+  tryAgainButton: {fileID: 177562368}
 --- !u!4 &1938867025
 Transform:
   m_ObjectHideFlags: 0

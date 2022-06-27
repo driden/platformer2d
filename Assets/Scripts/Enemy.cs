@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int Health = 100;
+    public int Health = 2;
 
     public float MaxWalkingDistance = 3f;
     public float MovementSpeed = 2f;

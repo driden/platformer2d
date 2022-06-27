@@ -1,9 +1,6 @@
 name: Build Project and Publish to itch.io
 on: 
   push:
-    # Sequence of patterns matched against refs/heads
-    branches:    
-      - master
     tags:        
       - 0.*
       - 1.*

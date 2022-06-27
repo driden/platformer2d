@@ -1,5 +1,6 @@
 name: Build Project and Publish to itch.io
-on: 
+on:
+  workflow_dispatch: {}
   push:
     tags:        
       - 0.*

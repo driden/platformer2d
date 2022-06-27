@@ -1,6 +1,7 @@
 # Jumping Martha
 
 ## Bugs
+- [ ] Subir y bajar volumen
 - [x] Quitar escalera
   - [ ] Quitar animación de escalera
 - [x] Clippeo de paredes (elegir tiles correctos para que no se caiga).

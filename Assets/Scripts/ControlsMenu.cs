@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class ControlsMenu : MonoBehaviour
 {
-    public static bool gameIsPaused = false;
+    public static bool gameIsPaused;
     [SerializeField] private GameObject controlsMenuUI;
+
+    void Start()
+    {
+        gameIsPaused = false;
+        controlsMenuUI.SetActive(false);
+    }
 
 
     // Update is called once per frame

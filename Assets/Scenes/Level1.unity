@@ -38093,7 +38093,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -405.56604, y: -206.24721, z: -10}
+  m_LocalPosition: {x: -355.46942, y: -192.8372, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1595552592}
@@ -50556,18 +50556,6 @@ CompositeCollider2D:
         Y: 10000000
       - X: 169375008
         Y: 10000000
-    - - X: 520000000
-        Y: 1250000
-      - X: 520000000
-        Y: 10000000
-      - X: 500000000
-        Y: 10000000
-      - X: 500000000
-        Y: 312500
-      - X: 500937504
-        Y: 0
-      - X: 519375008
-        Y: 0
     - - X: 137187504
         Y: 1250000
       - X: 140000000
@@ -50583,6 +50571,18 @@ CompositeCollider2D:
       - X: 120937504
         Y: 0
       - X: 135624992
+        Y: 0
+    - - X: 520000000
+        Y: 1250000
+      - X: 520000000
+        Y: 10000000
+      - X: 500000000
+        Y: 10000000
+      - X: 500000000
+        Y: 312500
+      - X: 500937504
+        Y: 0
+      - X: 519375008
         Y: 0
     - - X: 470000000
         Y: -70000000
@@ -50662,12 +50662,6 @@ CompositeCollider2D:
       - {x: 15, y: 1.03125}
       - {x: 15.093751, y: 1}
       - {x: 16.937502, y: 1}
-    - - {x: 52, y: 0.125}
-      - {x: 52, y: 1}
-      - {x: 50, y: 1}
-      - {x: 50, y: 0.03125}
-      - {x: 50.09375, y: 0}
-      - {x: 51.9375, y: 0}
     - - {x: 13.718751, y: 0.125}
       - {x: 14, y: 0.40625}
       - {x: 14, y: 0.96875}
@@ -50676,6 +50670,12 @@ CompositeCollider2D:
       - {x: 12, y: 0.03125}
       - {x: 12.093751, y: 0}
       - {x: 13.562499, y: 0}
+    - - {x: 52, y: 0.125}
+      - {x: 52, y: 1}
+      - {x: 50, y: 1}
+      - {x: 50, y: 0.03125}
+      - {x: 50.09375, y: 0}
+      - {x: 51.9375, y: 0}
     - - {x: 47, y: -7}
       - {x: 47, y: -6}
       - {x: 48, y: -6}
@@ -51019,7 +51019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810898059}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -405.56604, y: -206.24721, z: -10}
+  m_LocalPosition: {x: -355.46942, y: -192.8372, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1619473334}
@@ -54532,11 +54532,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2926229347851840776, guid: 1b44830651ac2d74880f34b90ad0ec97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.01
+      value: 46.49
       objectReference: {fileID: 0}
     - target: {fileID: 2926229347851840776, guid: 1b44830651ac2d74880f34b90ad0ec97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.11
+      value: 13.3
       objectReference: {fileID: 0}
     - target: {fileID: 2926229347851840776, guid: 1b44830651ac2d74880f34b90ad0ec97, type: 3}
       propertyPath: m_LocalPosition.z
@@ -54765,9 +54765,5 @@ PrefabInstance:
       propertyPath: sfx
       value: 
       objectReference: {fileID: 558945877}
-    - target: {fileID: 8699527394540185262, guid: 967d474fca90dc146bf81294ff8cb35f, type: 3}
-      propertyPath: Health
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 967d474fca90dc146bf81294ff8cb35f, type: 3}

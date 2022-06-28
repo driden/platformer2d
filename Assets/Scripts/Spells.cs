@@ -24,7 +24,7 @@ public class Spells : MonoBehaviour
 
     void Update()
     {
-	this.cooldown -= Time.deltaTime;
+	    this.cooldown -= Time.deltaTime;
     }
 
 

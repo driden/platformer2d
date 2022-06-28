@@ -12,6 +12,7 @@ TagManager:
   - Background
   - Damage
   - Jumpable
+  - SpeedUp
   layers:
   - Default
   - TransparentFX

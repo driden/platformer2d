@@ -19,15 +19,20 @@ public class ItemCollector : MonoBehaviour
             OnUnlockFire.Invoke();
             Destroy(collider.gameObject);
         }
-        if (collider.gameObject.CompareTag("Pumpkins"))
+        else if (collider.gameObject.CompareTag("Pumpkins"))
         {
             Destroy(collider.gameObject);
             pumpkins++;
             itemCounterText.text = "Points: " + pumpkins;
             sfx.playPickUp();
-        }  
-
+        }
+        else if (collider.gameObject.CompareTag("SpeedUp"))
+        {
+            OnUnlockSpeedUp.Invoke();
+            Destroy(collider.gameObject);
+        }
     }
 
     public UnityEvent OnUnlockFire;
+    public UnityEvent OnUnlockSpeedUp;
 }

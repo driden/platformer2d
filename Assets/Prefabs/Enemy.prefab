@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20afe197064f91649b548846aa95fb63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 100
+  Health: 2
   MaxWalkingDistance: 2
   MovementSpeed: 5
   sfx: {fileID: 0}

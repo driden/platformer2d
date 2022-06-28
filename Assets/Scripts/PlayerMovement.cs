@@ -169,4 +169,11 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene("Scenes/EndGame");
     }
+
+    public void UnlockSpeedUpHandler()
+    {
+        this.JumpForce = 8;
+        this.HorizontalSpeed = 6;
+        this.sfx.playUnlock();
+    }
 }

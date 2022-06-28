@@ -5,12 +5,12 @@
 - [x] Quitar escalera
   - [ ] Quitar animación de escalera
 - [x] Clippeo de paredes (elegir tiles correctos para que no se caiga).
-- [ ] Enemigos moviéndose dependiendo de la velocidad del equipo
+- [ ] Enemigos moviéndose dependiendo de la velocidad del pc
 - [x] Ajustar relación entre daño/cooldown/vida de los enemigos (2 hits por ejemplo)
 - [x] Faltan sprites de pinchos en el nivel 1 (el comportamiento es correcto)
 - [x] La pantalla de fin no permite volver a jugar
 - [ ] Los puntos se reinician entre niveles
-- [ ] La habilidad se reinicia entre niveles
+- [x] La habilidad se reinicia entre niveles
 
 ## TODOs
 
@@ -20,12 +20,12 @@
 - [x] Fix cantidad de disparos de la fireball
 - [x] Borrar las fireballs despues de que se disparan
 - [x] Fix animacion salto
-- [ ] **Hacer el juego más difícil**
+- [x] **Hacer el juego más difícil**
 
 ### Entrega 2
 - [x] Crear al menos un nivel más
-  - [ ] Terminar el nivel
-  - [ ] (Opcional) Una mecánica mas
+  - [x] Terminar el nivel
+  - [x] (Opcional) Una mecánica mas
 - [ ] (Opcional) Nivel 3 con un Boss
 #### HUD
 - [x] ~ UI Responsive en varias resoluciones~
@@ -34,7 +34,7 @@
 - [ ] Menú con link a créditos, o mostrar creditos al final del nivel
 
 #### Enemigos
-- [ ] Agregar animaciones a los enemigos
+- [x] Agregar animaciones a los enemigos
 - [ ] Mecánica de enemigos
 
 #### Música

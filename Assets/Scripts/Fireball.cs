@@ -6,7 +6,7 @@ public class Fireball : MonoBehaviour
     public Rigidbody2D rb;
     public int Damage = 1;
 
-    public float lifeTime = 10f;
+    public float lifeTime = 6f;
 
     void Start()
     {
@@ -16,7 +16,6 @@ public class Fireball : MonoBehaviour
     void Update() {
         this.lifeTime -= Time.deltaTime;
         if (this.lifeTime <= 0){
-            Debug.Log("Destroying prefab");
             Destroy(this.gameObject);
         } 
     }
@@ -31,7 +30,6 @@ public class Fireball : MonoBehaviour
             enemy.TakeDamage(Damage);
         }
         
-        Debug.Log($"crashed with {collider.name}");
         Destroy(this.gameObject);
     }
 }

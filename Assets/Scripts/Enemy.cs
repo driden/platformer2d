@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
         Hurt = 5
     }
 
-    public int Health = 20;
+    public int Health = 2;
     public float MaxWalkingDistance = 3f;
     public float MovementSpeed = 2f;
     private Rigidbody2D rb;

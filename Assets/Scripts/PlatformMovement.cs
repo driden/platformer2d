@@ -19,6 +19,7 @@ public class PlatformMovement : MonoBehaviour
                 currentPathIndex = 0;
             }
         }
-        transform.position = Vector2.MoveTowards(transform.position, movementPath[currentPathIndex].transform.position, Time.deltaTime * speed);
+        transform.position = Vector2.MoveTowards(transform.position, movementPath[currentPathIndex].transform.position, 
+        Time.deltaTime * speed);
     }
 }

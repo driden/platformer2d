@@ -10,10 +10,14 @@ public class Level2Manager : MonoBehaviour
     [SerializeField] public GameObject enemy2;
     [SerializeField] public GameObject enemy3;
 
-    private bool _enemy1IsDead = false;
-    private bool _enemy2IsDead = false;
-    private bool _enemy3IsDead = false;
+    public SFXManager sfx;
+    private GameObject[] rocks;
+
+    private static bool _enemy1IsDead = false;
+    private static bool _enemy2IsDead = false;
+    private static bool _enemy3IsDead = false;
     private bool _lockWinCondition = false;
+    private bool pathIsClosed = true;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +25,7 @@ public class Level2Manager : MonoBehaviour
         _enemy1IsDead = false;
         _enemy2IsDead = false;
         _enemy3IsDead = false;
+        if (rocks == null) rocks = GameObject.FindGameObjectsWithTag("RocksPath");
     }
 
     // Update is called once per frame
@@ -30,15 +35,40 @@ public class Level2Manager : MonoBehaviour
         if (!enemy2) _enemy2IsDead = true;
         if (!enemy3) _enemy3IsDead = true;
 
+        OpenRockPath();
+
         if (WinConditionIsMet())
         {
             _lockWinCondition = true;
-            SceneManager.LoadScene("Scenes/EndGame");
+            //SceneManager.LoadScene("Scenes/WinGame");
         }
     }
 
     bool WinConditionIsMet()
     {
-        return _enemy1IsDead && _enemy2IsDead && _enemy3IsDead && !_lockWinCondition;
+        return EnemiesAreDead() && !_lockWinCondition;
     }
+
+    public static bool EnemiesAreDead()
+    {
+        return _enemy1IsDead && _enemy2IsDead && _enemy3IsDead;
+    }
+
+
+    private void OpenRockPath(){
+        if (EnemiesAreDead() && pathIsClosed)
+        {
+            pathIsClosed = false;
+            this.sfx.playWin();
+            foreach (GameObject rock in rocks)
+            {
+                Destroy(rock);
+            }
+       }
+    }
+
+
+
+        
+
 }

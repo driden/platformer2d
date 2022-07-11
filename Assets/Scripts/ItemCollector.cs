@@ -8,7 +8,7 @@ using TMPro;
 public class ItemCollector : MonoBehaviour
 {
 
-    private int pumpkins = 0;
+    private static int pumpkins = 0;
     public SFXManager sfx;
 
     [SerializeField] private TextMeshProUGUI itemCounterText;
@@ -31,6 +31,10 @@ public class ItemCollector : MonoBehaviour
             OnUnlockSpeedUp.Invoke();
             Destroy(collider.gameObject);
         }
+    }
+
+    public static int GetScore(){
+        return pumpkins;
     }
 
     public UnityEvent OnUnlockFire;

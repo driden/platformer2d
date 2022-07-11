@@ -17,7 +17,12 @@ public class WinChest : MonoBehaviour
     }
     private IEnumerator WaitForSceneLoad()
     {
-        yield return new WaitForSeconds(2.5f);
-        SceneManager.LoadScene("Scenes/Level2");
+        yield return new WaitForSeconds(1.0f);
+        if (SceneManager.GetActiveScene().name == "Level1") {
+            SceneManager.LoadScene("Scenes/Level2");
+        } else {
+            SceneManager.LoadScene("Scenes/WinGame");
+        }
+        
     }
 }

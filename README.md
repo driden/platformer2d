@@ -29,9 +29,9 @@
 - [ ] (Opcional) Nivel 3 con un Boss
 #### HUD
 - [x] ~ UI Responsive en varias resoluciones~
-- [ ] Menú del juego explicando controles
+- [x] Menú del juego explicando controles
 - [ ] Menú de pausa con opcion de reiniciar el nivel y volver al menú principal
-- [ ] Menú con link a créditos, o mostrar creditos al final del nivel
+- [x] Menú con link a créditos, o mostrar creditos al final del nivel
 
 #### Enemigos
 - [x] Agregar animaciones a los enemigos

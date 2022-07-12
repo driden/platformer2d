@@ -16,7 +16,7 @@ namespace DefaultNamespace
         
         public static void ResetPumpkins()
         {
-            _pumpkins++;
+            _pumpkins = 0;
         }
     }
 }

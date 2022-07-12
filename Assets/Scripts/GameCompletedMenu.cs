@@ -1,11 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
-//using static ItemCollector;
 
 
 public class GameCompletedMenu : MonoBehaviour
@@ -33,13 +30,14 @@ public class GameCompletedMenu : MonoBehaviour
     
     private void HandleTryAgainButton()
     {
+        Pumpkins.ResetPumpkins();
         SceneManager.LoadScene("Scenes/Level1");
     }
 
     private void SetScore()
     {
         //TODO: Revisar porque da null pero despues funciona ok
-        score.text = "Score: " + ItemCollector.GetScore();
+        if (score) score.text = "Score: " + Pumpkins.GetPumpkins();
     }
 
 }

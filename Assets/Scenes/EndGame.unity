@@ -1212,6 +1212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quitButton: {fileID: 772137780}
   tryAgainButton: {fileID: 177562368}
+  score: {fileID: 0}
 --- !u!1 &1702826728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,6 +1310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quitButton: {fileID: 772137780}
   tryAgainButton: {fileID: 177562368}
+  score: {fileID: 0}
 --- !u!4 &1938867025
 Transform:
   m_ObjectHideFlags: 0
@@ -1380,7 +1382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Completed
+  m_text: Game Over :(
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 13750b6f8b6384b06983cd94cbe2e32c, type: 2}
   m_sharedMaterial: {fileID: -5142535290542791809, guid: 13750b6f8b6384b06983cd94cbe2e32c, type: 2}

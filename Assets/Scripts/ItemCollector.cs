@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -8,7 +9,7 @@ using TMPro;
 public class ItemCollector : MonoBehaviour
 {
 
-    private static int pumpkins = 0;
+    
     public SFXManager sfx;
 
     [SerializeField] private TextMeshProUGUI itemCounterText;
@@ -22,8 +23,8 @@ public class ItemCollector : MonoBehaviour
         else if (collider.gameObject.CompareTag("Pumpkins"))
         {
             Destroy(collider.gameObject);
-            pumpkins++;
-            itemCounterText.text = "Points: " + pumpkins;
+            Pumpkins.AddPumpkin();
+            itemCounterText.text = "Points: " + Pumpkins.GetPumpkins();
             sfx.playPickUp();
         }
         else if (collider.gameObject.CompareTag("SpeedUp"))
@@ -31,10 +32,6 @@ public class ItemCollector : MonoBehaviour
             OnUnlockSpeedUp.Invoke();
             Destroy(collider.gameObject);
         }
-    }
-
-    public static int GetScore(){
-        return pumpkins;
     }
 
     public UnityEvent OnUnlockFire;

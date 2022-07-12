@@ -1347,7 +1347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quitButton: {fileID: 772137780}
   tryAgainButton: {fileID: 177562368}
-  score: {fileID: 0}
+  score: {fileID: 384296215}
 --- !u!1 &1702826728
 GameObject:
   m_ObjectHideFlags: 0
